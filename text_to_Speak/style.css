@@ -1,0 +1,77 @@
+body
+{
+    background-image: url("bg02.jpg");
+    margin: 0;
+    padding: 0;
+    background-size: auto;
+}
+
+.speak_main{
+
+    text-align: center;
+    color: aliceblue;
+    text-wrap: wrap;
+
+}
+
+
+h1 {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: h1 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes h1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(98, 215, 217), 0 0 40px rgb(98, 215, 217), 0 0 50px #11737c, 0 0 60px #11737c, 0 0 70px #11737c;
+    }
+    
+    to {
+      text-shadow: 0 0 20px , 0 0 30px #0e72ba, 0 0 40px #0b746c, 0 0 50px #0b746c, 0 0 60px #0b746c, 0 0 70px #0b746c, 0 0 80px #0b746c;
+    }
+}
+
+h2
+{
+    font-size: 20px;
+    
+}
+.box textarea
+{
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    filter: opacity(0.8);
+    font-size: 20px;
+    
+}
+button
+{
+    background-color: #0c8179;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+button:hover
+{
+    background-color: black;
+    
+}
+footer {
+    background-color: #0c8179;
+    color: white;
+    text-align: center;
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

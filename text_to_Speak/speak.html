@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text_To_Speak</title>
+</head>
+<body>
+    <!--This is the code for when the user type the letter its speak -->
+    <section class="speak_main">
+        <header>
+            <h1>TEXT TO SPEAK</h1>
+        </header>
+    
+        
+        <article class="box">
+            <textarea id="textToSpeak" rows="10" cols="50" placeholder="Type here....."></textarea>
+        </article>
+
+        <button onclick="textToSpeech()">Speak</button>
+    </section>
+
+<!--Below part is internal Javascript -->
+    <script>
+        const textToSpeak = document.getElementById("textToSpeak");
+
+        function textToSpeech() {
+            let speakObj = new SpeechSynthesisUtterance(textToSpeak.value); 
+            window.speechSynthesis.speak(speakObj);
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Design by Nimas</p>
+    </footer>
+</body>
+</html>
